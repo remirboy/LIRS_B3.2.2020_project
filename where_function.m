@@ -1,6 +1,6 @@
 WHERE(1, 1, 1, 1, 1, 1, 1, 1, 1);
 
-function out = WHERE(l1, d1, theta3, d2, theta4, l3, theta5, d5, l6)
+function eeMatrix = WHERE(l1, d1, theta3, d2, theta4, l3, theta5, d5, l6)
 
     T12 = [1 0 0 l1;
         0 1 0 0;
@@ -30,5 +30,5 @@ function out = WHERE(l1, d1, theta3, d2, theta4, l3, theta5, d5, l6)
         0 0 0 1;
         ];
     
-    out = T12*T23*T34*T45*T5ee;
+    eeMatrix = T12*T23*T34*T45*T5ee;
 end
